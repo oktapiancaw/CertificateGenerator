@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+route::get('main', 'CertificateController@index');
+route::get('generate', 'CertificateController@generateImage')->name('main.generate');
